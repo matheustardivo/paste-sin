@@ -1,4 +1,4 @@
-# Paste-sin: a pastebin app like using Sinatra and Pygments with Albino (https://github.com/github/albino)
+# Paste-sin: a pastebin app like using Sinatra and Pygments
 
 ## Installation
 
