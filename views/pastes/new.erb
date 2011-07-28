@@ -1,0 +1,19 @@
+<h1>New paste</h1>
+
+<form action="/pastes/create" method="post">
+  <p>
+    <label for="paste_code">Code: *</label><br />
+    <textarea id="paste_code" name="paste[code]" cols="80" rows="20"></textarea>
+  </p>
+  
+  <p>
+    <label for="paste_lang">Language: *</label><br />
+    <select id="paste_lang" name="paste[lang]">
+    <% Paste::LEXERS.each do |label, lang| %>
+      <option value="<%= lang %>"><%= label %></option>
+    <% end %>
+    </select>
+  </p>
+  
+  <input type="submit" />
+</form>

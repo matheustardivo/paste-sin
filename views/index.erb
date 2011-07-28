@@ -1,0 +1,9 @@
+<h1>Listing pastes</h1>
+
+<p><a href="/pastes/new">New paste</a></p>
+
+<% @pastes.each do |paste| %>
+  <div class="paste">
+    <%= colorize paste.code, paste.lang %>
+  </div>
+<% end %>
